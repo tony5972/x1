@@ -1,0 +1,36 @@
+<html>
+<head>
+<script language="javascript">
+function myname()
+{
+if(document.frm.ntext.value!="")
+{
+
+}
+else
+{
+alert("please enter name");
+}
+}
+function checkage()
+{
+if(document.frm.atext.value!="")
+{
+ var a=document.frm.atext.value;
+if((a<1) && (a>20))
+{
+alert("enter proper age");
+}
+}
+}
+</script>
+</head>
+<body>
+<form name=frm>
+enter name:<input type="text" id="txt1" name="ntext" onblur="myname(this);" ></br>
+enter mobile number:<input type="text" id="txt2" name="mtext"></br>
+Enter age:<input type="text" id="txt3" name="atext" onclick="checkage(this);"/></br>
+<input type="submit" value="Submit" name="subm" >
+</form>
+</body>
+</html>
